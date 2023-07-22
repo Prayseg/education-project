@@ -1,1 +1,1 @@
-export { AboutPageLazy } from './AboutPage.lazy'
+export { AboutPageLazy as AboutPage } from './ui/AboutPage.lazy'

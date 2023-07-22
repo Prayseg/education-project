@@ -1,16 +1,13 @@
 import type { Configuration as DevServerConfiguration } from 'webpack-dev-server';
+import { BuildOptions } from "./types/config";
 
-interface BuildDevServerOptions {
-  port: number,
-  open: boolean
-}
-
-export function buildDevServer(options: BuildDevServerOptions): DevServerConfiguration {
-  const {port, open} = options;
+export function buildDevServer(options: BuildOptions): DevServerConfiguration {
+  const { port } = options;
 
   return {
     port,
-    open,
-    historyApiFallback: true
+    open: true,
+    historyApiFallback: true,
+    hot: true
   }
 }
