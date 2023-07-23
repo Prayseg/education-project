@@ -1,9 +1,9 @@
 .Sidebar {
-  height: calc(100vh - var(--navbar-height));
-  width: var(--sidebar-width);
   background: var(--inverted-bg-color);
-  transition: width 0.4s;
+  height: calc(100vh - var(--navbar-height));
   position: relative;
+  transition: width 0.4s;
+  width: var(--sidebar-width);
 }
 
 .collapsed {
@@ -11,11 +11,11 @@
 }
 
 .Switchers {
-  width: 100%;
-  position: absolute;
   bottom: 10px;
   display: flex;
   justify-content: center;
+  position: absolute;
+  width: 100%;
 }
 
 .lang {
