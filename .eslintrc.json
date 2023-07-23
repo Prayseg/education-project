@@ -2,7 +2,8 @@
     "root": true,
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "airbnb",
@@ -34,7 +35,9 @@
         "react/jsx-props-no-spreading": "warn",
         "i18next/no-literal-string": ["error", {
             "markupOnly": true
-        }]
+        }],
+        "no-trailing-spaces": "off",
+        "max-len": ["error", { "code": 100,  "comments": 150 }]
     },
     "globals": {
         "__IS_DEV__": true
