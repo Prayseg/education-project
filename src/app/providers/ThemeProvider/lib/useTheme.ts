@@ -1,5 +1,5 @@
-import { useCallback, useContext } from "react";
-import { LOCAL_STORAGE_THEME_KEY, ThemContext, Theme } from "./ThemeContext";
+import { useCallback, useContext } from 'react';
+import { LOCAL_STORAGE_THEME_KEY, ThemContext, Theme } from './ThemeContext';
 
 interface UseThemeResult {
   theme: Theme,
@@ -7,17 +7,17 @@ interface UseThemeResult {
 }
 
 export function useTheme(): UseThemeResult {
-  const { theme, setTheme } = useContext(ThemContext)
+  const { theme, setTheme } = useContext(ThemContext);
 
-  const toggleTheme = useCallback( () => {
-    const newTheme = theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT
+  const toggleTheme = useCallback(() => {
+    const newTheme = theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT;
 
     setTheme(newTheme);
-    localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme)
+    localStorage.setItem(LOCAL_STORAGE_THEME_KEY, newTheme);
   }, [theme, setTheme]);
 
   return {
     theme,
-    toggleTheme
-  }
+    toggleTheme,
+  };
 }

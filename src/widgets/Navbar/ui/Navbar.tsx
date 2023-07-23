@@ -1,6 +1,5 @@
-import { classNames } from "shared/lib/classNames";
-import { AppLink, AppLinkTheme } from "shared/ui/AppLink/ui/AppLink";
-import { ThemeSwitcher } from "shared/ui";
+import { classNames } from 'shared/lib/classNames';
+import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/ui/AppLink';
 
 import cls from './Navbar.module.scss';
 
@@ -8,8 +7,8 @@ interface NavbarProps {
   className?: string;
 }
 
-export const Navbar = (props: NavbarProps) => {
-  const {className} = props;
+export function Navbar(props: NavbarProps) {
+  const { className } = props;
   const { SECONDARY } = AppLinkTheme;
 
   return (
@@ -20,5 +19,4 @@ export const Navbar = (props: NavbarProps) => {
       </div>
     </div>
   );
-};
-
+}

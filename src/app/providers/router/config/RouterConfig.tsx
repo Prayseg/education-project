@@ -1,30 +1,29 @@
-import React from "react";
+import React from 'react';
 
-import { RouteProps } from "react-router-dom";
+import { RouteProps } from 'react-router-dom';
 
 import { MainPage } from 'pages/MainPage';
 import { AboutPage } from 'pages/AboutPage';
 
-
 enum AppRoutes {
   MAIN = 'main',
-  ABOUT = 'about'
+  ABOUT = 'about',
 }
 
-const {MAIN, ABOUT} = AppRoutes;
+const { MAIN, ABOUT } = AppRoutes;
 
 export const RoutePath: Record<AppRoutes, string> = {
   [MAIN]: '/',
-  [ABOUT]: '/about'
-}
+  [ABOUT]: '/about',
+};
 
 export const routeConfig: RouteProps[] = [
   {
     path: RoutePath.main,
-    element: <MainPage/>
+    element: <MainPage />,
   },
   {
     path: RoutePath.about,
-    element: <AboutPage/>
-  }
-]
+    element: <AboutPage />,
+  },
+];
