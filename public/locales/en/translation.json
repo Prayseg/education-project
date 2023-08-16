@@ -4,5 +4,8 @@
   "Главная": "Home",
   "О нас": "About us",
   "Загрузка": "Loading",
-  "Toggle": "Toggle"
+  "Toggle": "Toggle",
+  "Страница не найдена": "Page not found",
+  "Произошла непредвиденная ошибка": "An unexpected error has occurred",
+  "Обновить страницу": "Refresh the page"
 }

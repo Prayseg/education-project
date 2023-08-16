@@ -1,21 +1,25 @@
-import { Suspense } from 'react';
-import { useTranslation } from 'react-i18next';
+import { Suspense, useEffect } from 'react';
 
 import AppRouter from 'app/providers/router/ui/AppRouter';
-import { classNames } from 'shared/lib/classNames';
+import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
-import { Navbar } from 'widgets/Navbar';
-import { Sidebar } from 'widgets/Sidebar';
+import { Navbar, Sidebar } from 'widgets';
 
 import './styles/index.scss';
 
 export function App() {
   const { theme } = useTheme();
-  const { t } = useTranslation();
+
+  useEffect(() => {
+    if (Math.random() < 0.5) {
+      throw new Error();
+    }
+  }, []);
 
   return (
     <div className={classNames('app', {}, [theme])}>
-      <Suspense fallback={`${t('Загрузка')}...`}>
+      {/* eslint-disable-next-line i18next/no-literal-string */}
+      <Suspense fallback="">
         <Navbar />
         <div className="content-page">
           <Sidebar />
