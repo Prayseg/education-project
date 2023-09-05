@@ -3,7 +3,7 @@ import { classNames } from 'shared/lib/classNames/classNames';
 
 import cls from './Button.module.scss';
 
-export type ButtonTheme = 'clear' | 'primary';
+export type ButtonTheme = 'clear' | 'primary' | 'outline';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;

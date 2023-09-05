@@ -17,7 +17,6 @@ export function LangSwitcher(props: LangSwitcherProps) {
 
   return (
     <Button
-      // eslint-disable-next-line i18next/no-literal-string
       theme="clear"
       className={classNames('', {}, [className])}
       onClick={toggleLangHandler}

@@ -18,7 +18,6 @@ export function App() {
 
   return (
     <div className={classNames('app', {}, [theme])}>
-      {/* eslint-disable-next-line i18next/no-literal-string */}
       <Suspense fallback="">
         <Navbar />
         <div className="content-page">

@@ -7,7 +7,6 @@ import { routeConfig } from '../config/RouterConfig';
 
 function AppRouter() {
   return (
-    // eslint-disable-next-line i18next/no-literal-string
     <Routes>
       {
         routeConfig.map(({ path, element }) => (

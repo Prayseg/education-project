@@ -14,7 +14,6 @@ export function ThemeSwitcher(props: ThemeSwitcherProps) {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    // eslint-disable-next-line i18next/no-literal-string
     <Button theme="clear" className={className} onClick={toggleTheme}>
       {
         theme === Theme.LIGHT ? <ThemeDark /> : <ThemeLight />

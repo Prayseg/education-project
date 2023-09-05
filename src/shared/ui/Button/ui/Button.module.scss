@@ -2,16 +2,29 @@
   cursor: pointer;
 }
 
+.primary {
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  outline: none;
+  padding: 5px 10px;
+}
+
 .clear {
   background: none;
   border: none;
+  color: var(--primary-color);
   margin: 0;
   outline: none;
   padding: 0;
 }
 
-.primary {
-  background-color: #fff;
-  border-color: #ccc;
-  color: #333;
+.outline {
+  background: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+  outline: none;
+  padding: 5px 10px;
 }
